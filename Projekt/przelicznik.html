@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+    <style type="text/css">
+        h1, h2 {
+            font-family: 'Times New Roman';
+            color: white;
+            background: #11738e;
+            text-align: center;
+            border: solid;
+            border-color: #6cadd3;
+        }
+    </style>
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header><h1> Poznański informator PKP</h1> </header>
+    <nav>
+        <h2> Menu </h2>
+        <ul>
+            <li><a href="Strona-glowna.html"> Strona głowna </a> </li>
+            <li><a href="art2.html"> Artykuł 2 </a> </li>
+            <li><a href="art1.html"> Artykuł 1 </a> </li>
+            <li><a href="map.html"> Map </a> </li>
+            <li><a href="logo.html"> Canvas Logo</a> </li>
+            <li><a href="przelicznik.html"> przelicznik </a> </li>
+            <li><a href="tabela.html"> Tabela</a> </li>
+            <li><a href="formularz.html"> Formularz </a> </li>
+            <li><a href="prezentacja.html"> Prezentacja </a> </li>
+            <li><a href="kontakt.html"> Kontakt </a> </li>
+        </ul>
+
+    </nav>
+    
+    <article>
+        <h2>Liczba Grashofa</h2>
+        <form name="a">
+            <fieldset style="background-color:#11738e; border:2px solid; border-block-color:#6cadd3 ">
+                <p style="color:white; align-content:center" >Wartości należy podać w jednostakch podstawowych SI</p>
+                <p style="color:white">Przyspieszenie ziemskie:</p> <input type="text" name="liczba1" /><br /><br />
+                <p style="color:white">Współczynnik rozszerzalności objętościowej:</p> <input type="text" name="liczba2" /><br /><br />
+                <p style="color:white">Różnica temperatur:</p> <input type="text" name="liczba3" /><br /><br />
+                <p style="color:white">Wymiar charakterystyczny:</p> <input type="text" name="liczba4" /><br /><br />
+                <p style="color:white">Kinematyczny współczynnik lepkości:</p> <input type="text" name="liczba5" /><br /><br />
+                <input type="button"style="width:60px; height:30px" onclick="oblicz();" value="Oblicz" /> <br /><br />
+                <h1>Wynik to:</h1>  <h1><input type="text" name="wynik" /><br /></h1>
+            </fieldset>
+        </form>
+        <script>
+            function oblicz() {
+                document.a.wynik.value = [parseInt(document.a.liczba1.value) *  Math.pow(parseInt(document.a.liczba2.value),3) * parseInt(document.a.liczba3.value) * parseInt(document.a.liczba4.value)] / Math.pow(parseInt(document.a.liczba5.value),2);
+            }
+            
+        </script>
+       
+
+        
+       
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe> </aside>
+    <footer></footer>
+
+
+</body>
+</html>

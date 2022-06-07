@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Zamów bilet (Formularz)</title>
+    <style type="text/css">
+        h1, h2 {
+            font-family: 'Times New Roman';
+            color: white;
+            background: #11738e;
+            text-align: center;
+            border: solid;
+            border-color: #6cadd3;
+        }
+    </style>
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="formularz.css" rel="stylesheet" />
+</head>
+<body>
+    <header><h1> Poznański informator PKP</h1> </header>
+    <nav>
+      <h2> Menu </h2>
+      <ul>
+          <li><a href="Strona-glowna.html"> Strona głowna </a> </li>
+          <li><a href="art2.html"> Artykuł 2 </a> </li>
+          <li><a href="art1.html"> Artykuł 1 </a> </li>
+          <li><a href="map.html"> Map </a> </li>
+          <li><a href="logo.html"> Canvas Logo</a> </li>
+          <li><a href="przelicznik.html"> przelicznik </a> </li>
+          <li><a href="tabela.html"> Tabela</a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href="prezentacja.html"> Prezentacja </a> </li>
+          <li><a href="kontakt.html"> Kontakt </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+        <h2>Zamów bilet</h2>
+        <form action="mailto:klaudiuszlim@gmail.com"
+              method="post">
+
+            <p>
+                Prosze wypełnić ten formularz<br />
+                Obowiązkowe pola oznaczono znakiem <em>*</em>
+            </p>
+            <fieldset>
+                <legend>Dane podróżnego</legend>
+                <label for="imie"> Imię<em>*</em>: </label>
+                <input type="text" name="imie" id="imie" autofocus
+                       placeholder="podaj swoje imię" required /> <br />
+
+                <label for="nazwisko"> Nazwisko: </label>
+                <input type="text" name="nazwisko" id="nazwisko" autofocus
+                       placeholder="podaj swoje nazwisko" required /> <br />
+
+                <label for="telefon">Nr telefonu: </label>
+                <input type="tel" name="telefon" id="telefon"
+                       placeholder="(+48) xxx-xxx-xxx" required /><br />
+
+                <label for="mail"> E-mail: </label>
+                <input type="email" name="mail" id="mail" placeholder="podaj email" required /> <br />
+                <label for="miasto"> Miasto<em>*</em>: </label>
+                <input type="text" name="miasto" id="miasto" autofocus placeholder="podaj miasto"
+                       required /> <br />
+
+                <label for="Kod"> Kod pocztowy<em>*</em>: </label>
+                <input type="text" name="Kod" id="Kod" autofocus
+                       required placeholder="00-000" /> <br />
+                <label for="Ulica"> Ulica<em>*</em>: </label>
+                <input type="text" name="Ulica" id="Ulica" autofocus placeholder="podaj Ulicę"
+                       required /> <br />
+                <label for="Nr"> Numer domu/lokalu<em>*</em>: </label>
+                <input type="text" name="Nr" id="Nr" autofocus placeholder="podaj numer"
+                       required /> <br />
+            </fieldset>
+            <fieldset>
+
+
+
+                <legend>Rodzaj i liczba zamawianych biletów</legend>
+                <label>
+                    <input type="checkbox" name=" uczniowski" id="uczniowski" />uczniowski
+                </label>
+                <input type="number" name="ilosc" id="ilosc" autofocus /><br />
+                <label>
+                    <input type="checkbox" name=" studencki" id="studencki" />studencki
+                </label><input type="number" name="ilosc" id="ilosc" autofocus /> <br />
+                <label>
+                    <input type="checkbox" name=" zwykły" id="zwykły" />zwykły
+                </label><input type="number" name="ilosc" id="ilosc" autofocus /><br />
+                <label>
+                    <input type="checkbox" name=" seniorski" id="seniorski" />seniorski
+                </label><input type="number" name="ilosc" id="ilosc" autofocus /><br />
+
+            </fieldset>
+            <fieldset>
+                <legend>Dane podróży</legend>
+                <label for="podroz"> Wybór połączenia </label>
+                <select id="1-2">
+                    <option value="1">Poznań - Gdańsk  </option>
+                    <option value="2">Poznań - Wrocław  </option>
+                    <option value="3">Poznań - Warszawa </option>
+                    <option value="4">Poznań - Kraków </option>
+                    <option value="5">Poznań - Szczecin  </option>
+                    <option value="6">Poznań - Bytom </option>
+                    <option value="7">Poznań - Zakopane </option>
+                    <option value="8">Poznań - Berlin  </option>
+                    <option value="9">Poznań - Praga </option>
+                    <option value="10">Poznań - Białystok </option>
+                    <option value="11">Poznań - Łódź </option>
+                    <option value="12">Poznań - Rzeszów </option>
+                    <option value="13">Poznań - Paryż </option>
+                    <option value="14">Poznań - Wiedeń  </option>
+                    <option value="15">Poznań - Inowrocław  </option>
+                    <option value="16">Poznań - Mikołajki </option>
+                    <option value="17">Poznań - Radom  </option>
+                    <option value="18">Poznań - Konin </option>
+                    <option value="19">Poznań - Leszno  </option>
+                </select>
+                <br />
+                <label for="data"> Data podróży:<em>*</em>: </label>
+                <input type="date" name="data" id="data" required /><br />
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Forma dostarczenia biletu </legend>
+                <label for="poczta" src="poczta1">Poczta</label><br />
+                <input type="radio" id="poczta" name="poczta" /> Elektroniczna <br />
+                <input type="radio" id="poczta1" name="poczta" onclick="isChecked()" /> Tradycyjna <br />
+              
+                            
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Wyślij formularz" />
+                <input type="reset" value="Kasuj formularz" />
+            </p>
+        </form>
+
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe> </aside>
+    <footer> </footer>
+
+
+</body>
+</html>

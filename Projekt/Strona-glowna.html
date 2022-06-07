@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Poznański informator PKP</title>
+
+    <style type="text/css">
+        h1, h2 {
+            font-family: 'Times New Roman';
+            color: white;
+            background: #11738e;
+            text-align: center;
+            border: solid;
+            border-color: #6cadd3;
+        }
+    </style>
+
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        #page {
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: left;
+        }
+
+        #contentheader {
+            text-align: center;
+            height: 175px;
+            background-color: #C5C5C8;
+            border: 1px;
+            padding: 5px;
+            margin: 0px 0px 2px 2px;
+        }
+
+        .zoom {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #contentleft {
+            width: 310px;
+            background-color: #11738e;
+            float: left;
+            position: relative;
+            border: 1px;
+            padding: 5px;
+            margin: 0px 0px 2px 2px;
+            height: 546px;
+        }
+
+        #contentright {
+            background-color: #11738e;
+            width: 310px;
+            float: left;
+            position: relative;
+            border: 1px;
+            padding: 5px;
+            margin: 0px 0px 2px 2px;
+            height: 546px;
+        }
+
+        .foto_lewy {
+            height: 100%;
+            width: 100%;
+            transition: 0.85s;
+            transform-origin: 25% 10%;
+        }
+
+        .foto_prawy {
+            height: 100%;
+            width: 100%;
+            transition: 0.85s;
+            transform-origin: 100% 15%;
+        }
+
+        .foto_lewy:hover {
+            transform: scale(1.6,1.35);
+        }
+
+        .foto_prawy:hover {
+            transform: scale(1.45,1.7);
+        }
+
+        #textleft {
+            width: 310px;
+            background-color: #11738e;
+            float: left;
+            position: relative;
+            border: 1px;
+            padding: 5px;
+            margin: 0px 0px 2px 2px;
+            height: 46px;
+        }
+
+        #textright {
+            background-color: #11738e;
+            width: 310px;
+            float: left;
+            position: relative;
+            border: 1px;
+            padding: 5px;
+            margin: 0px 0px 2px 2px;
+            height: 46px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Poznański informator PKP</h1> </header>
+    <nav>
+        <h2> Menu </h2>
+        <ul>
+            <li><a href="Strona-glowna.html"> Strona główna </a> </li>
+            <li><a href="art2.html"> Artykuł 2 </a> </li>
+            <li><a href="art1.html"> Artykuł 1 </a> </li>
+            <li><a href="map.html"> Map </a> </li>
+            <li><a href="logo.html"> Canvas Logo</a> </li>
+            <li><a href="przelicznik.html"> przelicznik </a> </li>
+            <li><a href="tabela.html"> Tabela</a> </li>
+            <li><a href="formularz.html"> Formularz </a> </li>
+            <li><a href="prezentacja.html"> Prezentacja </a> </li>
+            <li><a href="kontakt.html"> Kontakt </a> </li>
+        </ul>
+
+    </nav>
+    
+    <article>
+        <h2>Strona główna</h2>
+        <div id="page">
+            
+            <div id="contentleft">
+                <div class="zoom">
+                    <a href="art2.html">
+                        <img class="foto_lewy" src="wyk.jpg">
+                    </a>
+                </div>
+            </div>
+            <div id="contentright">
+                
+                <div class="zoom">
+                    <a href="art1.html">
+                        <img class="foto_prawy" src="pendolino.jpeg">
+                    </a>
+                </div>
+            </div>
+            <div id="textleft">
+                <a href="art2.html">
+                    <p>Wykolejenie sie wagonu z węglem </p>
+                </a>
+            </div>
+            <div id="textright">
+                <a href="art1.html">
+                <p> Czy Pendolino to przyszłość polskiej kolei?</p>
+                </a>
+            </div>
+        </div>
+    </article>
+    <aside>
+        <iframe src="kontrolkiJS.html"></iframe>    
+       
+    </aside>
+    <footer> </footer>
+
+
+</body>
+</html>

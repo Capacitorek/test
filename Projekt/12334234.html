@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularz</title>
+
+    <style>
+        h1, h2 {
+            color: #5c68ea;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="formularz.css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header><h1> To jest nagłówek całej strony</h1> </header>
+    <nav>
+      <h2 style="color:blue; background-color:antiquewhite"> Menu </h2>
+      <ul>
+          <li><a href="index.html"> Strona głowna </a> </li>
+          <li><a href="http://www.put.poznan.pl" target="_blank"> strona zewnetrzna - PP </a> </li>
+          <li><a href="artykul.html"> Artykuł </a> </li>
+          <li><a href="tabelka pracownicy.html"> Tabelka - pracownicy </a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href=""> JavaScript I </a> </li>
+          <li><a href=""> JavaScript II</a> </li>
+          <li><a href=""> Tabelka JS </a> </li>
+          <li><a href=""> Canvas 1 </a> </li>
+          <li><a href=""> Canvas 2 </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+       <h2>Zamów bilet</h2>
+       <form action="mailto:klaudiuszlim@gmail.com"
+             method="post">
+
+           <p>
+               Prosze wypełnić ten formularz<br />
+               Obowiązkowe pola oznaczono znakiem <em>*</em>
+           </p>
+           <fieldset>
+               <legend>Dane podróżnego</legend>
+               <label for="imie"> Imię<em>*</em>: </label>
+               <input type="text" name="imie" id="imie" autofocus
+                      placeholder="podaj swoje imię" required /> <br />
+
+               <label for="nazwisko"> Nazwisko: </label>
+               <input type="text" name="nazwisko" id="nazwisko" autofocus
+                      placeholder="podaj swoje nazwisko" required /> <br />
+
+               <label for="telefon">Nr telefonu: </label>
+               <input type="tel" name="telefon" id="telefon"
+                      placeholder="(+48) xxx-xxx-xxx" required /><br />
+
+               <label for="mail"> E-mail: </label>
+               <input type="email" name="mail" id="mail" required /> <br />
+           </fieldset>
+           <fieldset>
+               <legend>Produkty</legend>
+               <label>
+                   <input type="checkbox" name="bilet uczniowski" id="bilet uczniowski" />bilet uczniowski
+               </label><br />
+                       <label>
+                           <input type="checkbox" name="bilet studencki" id="bilet studencki" />bilet studencki
+                       </label><br />
+                               <label>
+                                   <input type="checkbox" name="bilet zwykły" id="bilet zwykły" />bilet zwykły
+                               </label><br />
+                                       <label>
+                                           <input type="checkbox" name="bilet seniorski" id="bilet seniorski" />bilet seniorski
+                                       </label><br />
+           </fieldset>
+           <fieldset>
+               <legend>Dane podróży</legend>
+
+               <label for="miasto początkowe"> Miasto początkowe<em>*</em>: </label>
+               <input type="text" name="miasto początkowe" id="miasto początkowe" autofocus
+                      required /> <br />
+               
+                                  <label for="miasto docelowe"> Miasto docelowe<em>*</em>: </label>
+               <input type="text" name="Miasto docelowe" id="Miasto docelowe" autofocus
+                      required /> <br />
+           </fieldset>
+           <fieldset>
+               <legend>Dane do wysyłki</legend>
+
+               <label for="miasto"> Miasto<em>*</em>: </label>
+               <input type="text" name="miasto" id="miasto" autofocus
+                      required /> <br />
+               <label for="Kod"> Kod pocztowy<em>*</em>: </label>
+               <input type="text" name="Kod" id="Kod" autofocus
+                      required placeholder="00-000" /> <br />
+               <label for="Ulica"> Ulica<em>*</em>: </label>
+               <input type="text" name="Ulica" id="Ulica" autofocus
+                      required /> <br />
+
+               <label for="nr"> Nr domu<em>*</em>: </label>
+               <input type="number" name="nr" id="nr" autofocus
+                      required /> <br />
+               <label for="data"> Preferowana data wysyłki:<em>*</em>: </label>
+               <input type="date" name="data" id="data" /><br />
+
+           </fieldset>
+
+           <fieldset>
+               <legend>Dane do statystyk</legend>
+               <label for="wiek"> Wiek: </label><br />
+               <input type="radio" id="wiek" name="wiek" /> 0-18 <br />
+               <input type="radio" id="wiek" name="wiek" checked /> 19-30 <br />
+               <input type="radio" id="wiek" name="wiek" /> 31-50 <br />
+               <input type="radio" id="wiek" name="wiek" /> 51-65 <br />
+               <input type="radio" id="wiek" name="wiek" /> i więcej :) <br />
+               <label for="płeć"> Płeć: </label><br />
+               <select id="płeć" name="płeć">
+                   <option value="kobieta"> Kobieta </option>
+                   <option value="mężczyzna"> Mężczyzna </option>
+               </select>
+               <br />
+               <label for="opinia"> Opinia: </label><br />
+               <textarea cols="30" rows="10">  </textarea>
+           </fieldset>
+
+           <p>
+               <input type="submit" value="Wyślij formularz" />
+               <input type="reset" value="Kasuj formularz" />
+           </p>
+       </form>
+
+    </article>
+    <aside> <iframe src=""></iframe>  </aside>
+    <footer> Stopka całej strony</footer>
+
+
+</body>
+</html>

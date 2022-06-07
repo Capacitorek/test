@@ -1,0 +1,35 @@
+﻿nav ul, nav ul li{
+    display:block;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+nav ul {
+    width: 175px;
+    padding: 2px 2px 1px 2px;
+    background-color: #6cadd3;
+    border: 3px double #11738e;
+}
+
+    nav ul li {
+        border-bottom: 1px solid #11738e;
+    }
+
+    nav ul a:link, nav ul a:visited {
+        display: block;
+        width: 150px;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: #6cadd3;
+        color: white;
+        border-left: 10px solid #6cadd3;
+        padding: 10px;
+    }
+
+    nav ul a:hover {
+        width: 155px;
+        border-left: 25px solid #6cadd3;
+        color: #11738e;
+        background-color: #6cadd3;
+    }

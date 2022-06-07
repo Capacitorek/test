@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+    <style type="text/css">
+        h1, h2 {
+            font-family: 'Times New Roman';
+            color: white;
+            background: #11738e;
+            text-align: center;
+            border: solid;
+            border-color: #6cadd3;
+        }
+    </style>
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <style>
+        table {
+            font-family: 'Times New Roman'
+            border-spacing: 0px;
+            border: 1px solid #6cadd3;
+            margin: auto;
+            background-color: #11738e;
+        }
+
+        thead tr th {
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid #6cadd3;
+            padding: 5px;
+            color: white;
+            border-collapse: collapse;
+            background-color: #11738e;
+        }
+
+        tbody tr td {
+            font-family: 'Times New Roman';
+            border: 1px solid #6cadd3;
+            padding: 5px;
+            color: white;
+            background-color: #11738e;
+        }
+
+        .praca {
+            background-color: #11738e;
+            color: white;
+        }
+
+        .wolne {
+            background-color: #11738e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header><h1> Poznański informator PKP</h1> </header>
+    <nav>
+      <h2> Menu </h2>
+      <ul>
+          <li><a href="Strona-glowna.html"> Strona głowna </a> </li>
+          <li><a href="art2.html"> Artykuł 2 </a> </li>
+          <li><a href="art1.html"> Artykuł 1 </a> </li>
+          <li><a href="map.html"> Map </a> </li>
+          <li><a href="logo.html"> Canvas Logo</a> </li>
+          <li><a href="przelicznik.html"> przelicznik </a> </li>
+          <li><a href="tabela.html"> Tabela</a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href="prezentacja.html"> Prezentacja </a> </li>
+          <li><a href="kontakt.html"> Kontakt </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+        <h2>Spis połączeń kolejowych -Poznań-</h2>
+       
+        <table>
+            
+            <thead>
+                <tr>
+                    <th rowspan="2" align="center">Linia</th>
+                    <th rowspan=2 align="center">Cena</br> PLN</th>
+                    <th rowspan="2" align="center">Połączenie</th>
+                    <th colspan="9" align="center">Godzina odjazdu z Poznania - dotarcia do celu </th>
+                </tr>
+                <tr>
+                    <th >8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">1.</td>
+                    <td align="center">35</td>
+                    <td align="center">Poznań - Gdańsk</td>
+                    <td colspan="1" class="wolne"></td>
+                    <td colspan="4" class="praca"  align="center"> 9:00 - 13:00</td>
+                    <td colspan="4" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">2.</td>
+                    <td align="center">30</td>
+                    <td align="center">Poznań - Wrocław </td>
+                    <td colspan="3" class="wolne"  align="center">8:00 - 11:00</td>
+                    <td colspan="6" class="praca"> </td>
+                </tr>
+                <tr>
+                    <td align="center">3.</td>
+                    <td align="center">30</td>
+                    <td align="center">Poznań - Warszawa </td>
+                    <td colspan="2" class="wolne"></td>
+                    <td colspan="3" class="praca"  align="center"> 10:00 - 13:00</td>
+                    <td colspan="5" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">4.</td>
+                    <td align="center">50</td>
+                    <td align="center">Poznań - Kraków </td>
+                    <td colspan="5" class="praca"  align="center"> 8:00 - 13:00</td>
+                    <td colspan="4" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">5.</td>
+                    <td align="center">25</td>
+                    <td align="center">Poznań - Szczecin</td>
+                    <td colspan="6" class="wolne"></td>
+                    <td colspan="3" class="praca"  align="center">  13:00-16:00</td>
+
+                </tr>
+                <tr>
+                    <td align="center">6.</td>
+                    <td align="center">30</td>
+                    <td align="center">Poznań - Bytom</td>
+                    <td colspan="4" class="praca"></td>
+                    <td colspan="2" class="wolne"  align="center">12:00 - 14:00</td>
+                    <td colspan="3" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">7.</td>
+                    <td align="center">60</td>
+                    <td align="center">Poznań - Zakopane</td>
+                    <td colspan="6" class="praca"  align="center"> 8:00 - 14:00</td>
+                    <td colspan="3" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">8.</td>
+                    <td align="center">70</td>
+                    <td align="center">Poznań - Berlin</td>
+                    <td colspan="5" class="praca"  align="center"> 8:00 - 13:00</td>
+                    <td colspan="4" class="wolne"></td>
+
+                </tr>
+                <tr>
+                    <td align="center">9.</td>
+                    <td align="center">75</td>
+                    <td align="center">Poznań - Praga</td>
+                    <td colspan="7" class="praca" align="center"> 8:00 - 15:00</td>
+                    
+                    <td colspan="2" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">10.</td>
+                    <td align="center">65</td>
+                    <td align="center">Poznań - Białystok</td>
+                    <td colspan="2" class="wolne"></td>
+                    <td colspan="7" class="praca"  align="center"> 10:00 - 16:00</td>
+
+                </tr>
+                <tr>
+                    <td align="center">11.</td>
+                    <td align="center">40</td>
+                    <td align="center">Poznań - Łódź</td>
+                    <td colspan="4" class="praca"  align="center"> 8:00 - 12:00</td>
+                    <td colspan="5" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">12.</td>
+                    <td align="center">40</td>
+                    <td align="center">Poznań - Rzeszów</td>
+                    <td colspan="3" class="wolne"></td>
+                    <td colspan="3" class="praca" align="center"> 11:00 - 14:00</td>
+                    <td colspan="3" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">13.</td>
+                    <td align="center">120</td>
+                    <td align="center">Poznań - Paryż</td>
+                    <td colspan="9" class="praca" align="center"> 8:00 - 17:00</td>
+                    
+                </tr>
+                <tr>
+                    <td align="center">14.</td>
+                    <td align="center">70</td>
+                    <td align="center">Poznań - Wiedeń</td>
+                    <td colspan="1" class="praca"> </td>
+                    <td  colspan="7" class="wolne" align="center"> 9:00 - 16:00 </td>
+                    <td colspan="1" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">15.</td>
+                    <td align="center"> 40</td>
+                    <td align="center">Poznań - Inowrocław</td>
+                    <td colspan="3" class="praca" align="center">8:00 - 11:00</td>
+                    <td  colspan="3"class="wolne">  </td>
+                    <td colspan="3" class="wolne" align="center">14:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td align="center">16.</td>
+                    <td align="center">60</td>
+                    <td align="center">Poznań - Mikołajki</td>
+                    <td colspan="3" class="wolne"></td>
+                    <td colspan="6" class="praca"> 10:00 - 17:00</td>
+                    
+                </tr>
+                <tr>
+                    <td align="center">17.</td>
+                    <td align="center">50</td>
+                    <td align="center">Poznań - Radom</td>
+                    <td colspan="4" class="praca"> 8:00 - 12:00</td>
+                    
+                    <td colspan="5" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">18.</td>
+                    <td align="center">35</td>
+                    <td align="center">Poznań - Konin</td>
+                    <td colspan="2" class="praca"> 8:00 - 10:00</td>
+                    <td colspan="3" class="wolne"></td>
+                    <td colspan="2" class="wolne">13:00 - 15:00</td>
+                    <td colspan="2" class="wolne"></td>
+                </tr>
+                <tr>
+                    <td align="center">19.</td>
+                    <td align="center">20</td>
+                    <td align="center">Poznań - Leszno</td>
+                    <td colspan="6" class="praca"> </td>
+                    <td colspan="3" calss="wolne"> 14:00 - 16:00 </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe> </aside>
+    <footer> </footer>
+
+
+</body>
+</html>
